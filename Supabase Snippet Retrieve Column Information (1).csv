@@ -1,0 +1,209 @@
+table_schema,table_name,column_name,data_type
+public,account_betting_houses,id,uuid
+public,account_betting_houses,account_id,uuid
+public,account_betting_houses,betting_house_id,uuid
+public,account_betting_houses,status,text
+public,account_betting_houses,verification,text
+public,account_betting_houses,created_at,timestamp with time zone
+public,account_betting_houses,updated_at,timestamp with time zone
+public,account_betting_houses,saldo,text
+public,account_betting_houses,deposito,text
+public,account_betting_houses,sacado,text
+public,account_betting_houses,creditos,text
+public,account_betting_houses,obs,text
+public,accounts,id,uuid
+public,accounts,item,integer
+public,accounts,responsavel,text
+public,accounts,status,text
+public,accounts,name,text
+public,accounts,cpf,text
+public,accounts,birth_date,date
+public,accounts,address,text
+public,accounts,phone,text
+public,accounts,email1,text
+public,accounts,password1,text
+public,accounts,chip,text
+public,accounts,verification,text
+public,accounts,created_at,timestamp with time zone
+public,accounts,updated_at,timestamp with time zone
+public,accounts,user_id,uuid
+public,banks,id,uuid
+public,banks,name,text
+public,banks,initial_capital,numeric
+public,banks,roi,numeric
+public,banks,gross_profit,numeric
+public,banks,created_at,timestamp with time zone
+public,banks,updated_at,timestamp with time zone
+public,banks,user_id,uuid
+public,banks,bet_count,numeric
+public,betting_houses,id,uuid
+public,betting_houses,name,text
+public,betting_houses,created_at,timestamp with time zone
+public,betting_houses,updated_at,timestamp with time zone
+public,betting_houses,link,text
+public,betting_operation_details,id,uuid
+public,betting_operation_details,betting_operation_id,uuid
+public,betting_operation_details,account_id,uuid
+public,betting_operation_details,casa1,text
+public,betting_operation_details,cpf1,text
+public,betting_operation_details,stake1,text
+public,betting_operation_details,casa2,text
+public,betting_operation_details,cpf2,text
+public,betting_operation_details,stake2,text
+public,betting_operation_details,casaprot,text
+public,betting_operation_details,cpfprot,text
+public,betting_operation_details,stakeprot,text
+public,betting_operation_details,casavencedora,text
+public,betting_operation_details,cpfvencedor,text
+public,betting_operation_details,created_at,timestamp with time zone
+public,betting_operation_details,updated_at,timestamp with time zone
+public,betting_operation_details,casaprot2,text
+public,betting_operation_details,cpfprot2,text
+public,betting_operation_details,stakeprot2,text
+public,betting_operation_details,casaprot3,text
+public,betting_operation_details,cpfprot3,text
+public,betting_operation_details,stakeprot3,text
+public,betting_operations,id,uuid
+public,betting_operations,date,date
+public,betting_operations,time,time without time zone
+public,betting_operations,game_name,text
+public,betting_operations,house1_id,uuid
+public,betting_operations,house2_id,uuid
+public,betting_operations,bet_amount,numeric
+public,betting_operations,result,numeric
+public,betting_operations,profit,numeric
+public,betting_operations,promotion_type,text
+public,betting_operations,status,text
+public,betting_operations,created_at,timestamp with time zone
+public,betting_operations,updated_at,timestamp with time zone
+public,betting_operations,promotion_id,uuid
+public,betting_operations,bank_id,uuid
+public,betting_operations,user_id,uuid
+public,emprestadores,id,uuid
+public,emprestadores,account_id,uuid
+public,emprestadores,email,text
+public,emprestadores,password,text
+public,emprestadores,created_at,timestamp with time zone
+public,emprestadores,updated_at,timestamp with time zone
+public,lender_tasks,id,uuid
+public,lender_tasks,title,text
+public,lender_tasks,status,text
+public,lender_tasks,created_at,timestamp with time zone
+public,lender_tasks,updated_at,timestamp with time zone
+public,lender_tasks,lender_id,uuid
+public,manual_balances,id,integer
+public,manual_balances,type,text
+public,manual_balances,amount,numeric
+public,manual_balances,last_updated,timestamp with time zone
+public,manual_balances,user_id,uuid
+public,monthly_summaries,id,uuid
+public,monthly_summaries,year,integer
+public,monthly_summaries,month,integer
+public,monthly_summaries,total_bets,integer
+public,monthly_summaries,total_bet_amount,numeric
+public,monthly_summaries,total_result,numeric
+public,monthly_summaries,total_profit,numeric
+public,monthly_summaries,roi,numeric
+public,monthly_summaries,accounts_used,integer
+public,monthly_summaries,profit_per_account,numeric
+public,monthly_summaries,created_at,timestamp with time zone
+public,monthly_summaries,updated_at,timestamp with time zone
+public,monthly_summaries,user_id,uuid
+public,operation_accounts,id,uuid
+public,operation_accounts,operation_id,uuid
+public,operation_accounts,account_id,uuid
+public,operation_accounts,betting_house_id,uuid
+public,operation_accounts,stake,numeric
+public,operation_accounts,role,text
+public,operation_accounts,is_winner,boolean
+public,operation_accounts,created_at,timestamp with time zone
+public,operation_accounts,updated_at,timestamp with time zone
+public,organization_cards,id,uuid
+public,organization_cards,column_id,uuid
+public,organization_cards,content,text
+public,organization_cards,description,text
+public,organization_cards,color,text
+public,organization_cards,position,integer
+public,organization_cards,attachments,ARRAY
+public,organization_cards,created_at,timestamp with time zone
+public,organization_cards,updated_at,timestamp with time zone
+public,organization_cards,user_id,uuid
+public,organization_columns,id,uuid
+public,organization_columns,title,text
+public,organization_columns,position,integer
+public,organization_columns,created_at,timestamp with time zone
+public,organization_columns,updated_at,timestamp with time zone
+public,organization_columns,user_id,text
+public,payment_transactions,id,uuid
+public,payment_transactions,transaction_id,text
+public,payment_transactions,customer_email,text
+public,payment_transactions,amount,numeric
+public,payment_transactions,status,text
+public,payment_transactions,payment_method,text
+public,payment_transactions,created_at,timestamp with time zone
+public,profiles,id,uuid
+public,profiles,full_name,text
+public,profiles,cpf,text
+public,profiles,birth_date,date
+public,profiles,whatsapp,text
+public,profiles,zip_code,text
+public,profiles,address,text
+public,profiles,updated_at,timestamp with time zone
+public,promotions,id,uuid
+public,promotions,name,text
+public,promotions,description,text
+public,promotions,created_at,timestamp with time zone
+public,promotions,updated_at,timestamp with time zone
+public,tax_annual_data,id,uuid
+public,tax_annual_data,account_id,uuid
+public,tax_annual_data,year,integer
+public,tax_annual_data,total_income,numeric
+public,tax_annual_data,taxable_income,numeric
+public,tax_annual_data,tax_due,numeric
+public,tax_annual_data,tax_paid,numeric
+public,tax_annual_data,created_at,timestamp with time zone
+public,tax_annual_data,updated_at,timestamp with time zone
+public,tax_monthly_data,id,uuid
+public,tax_monthly_data,account_id,uuid
+public,tax_monthly_data,year,integer
+public,tax_monthly_data,month,integer
+public,tax_monthly_data,total_income,numeric
+public,tax_monthly_data,taxable_income,numeric
+public,tax_monthly_data,tax_due,numeric
+public,tax_monthly_data,status,text
+public,tax_monthly_data,payment_date,timestamp with time zone
+public,tax_monthly_data,created_at,timestamp with time zone
+public,tax_monthly_data,updated_at,timestamp with time zone
+public,user_profiles,id,integer
+public,user_profiles,user_id,uuid
+public,user_profiles,role,text
+public,user_profiles,created_at,timestamp with time zone
+public,user_profiles,updated_at,timestamp with time zone
+public,user_profiles,full_name,text
+public,user_profiles,cpf,character varying
+public,user_profiles,birth_date,date
+public,user_profiles,whatsapp,character varying
+public,user_profiles,zip_code,character varying
+public,user_profiles,address,text
+public,user_profiles,email,text
+public,user_subscriptions,id,uuid
+public,user_subscriptions,user_id,uuid
+public,user_subscriptions,subscription_id,text
+public,user_subscriptions,plan_id,text
+public,user_subscriptions,status,text
+public,user_subscriptions,access_level,text
+public,user_subscriptions,expires_at,timestamp with time zone
+public,user_subscriptions,created_at,timestamp with time zone
+public,user_subscriptions,updated_at,timestamp with time zone
+public,users,id,uuid
+public,users,email,text
+public,users,encrypted_password,text
+public,users,last_sign_in_at,timestamp with time zone
+public,users,created_at,timestamp with time zone
+public,users,updated_at,timestamp with time zone
+public,users,full_name,character varying
+public,users,cpf,character varying
+public,users,birth_date,text
+public,users,whatsapp,date
+public,users,zip_code,character varying
+public,users,address,text
