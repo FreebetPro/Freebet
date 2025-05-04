@@ -19,15 +19,6 @@ const Home: React.FC = () => {
   // Adicionado comunidade do Telegram ao array de produtos
   const products = [
     {
-      title: 'PLANNER PRO',
-      description: 'Organize sua vida financeira com os projetos e atinja suas Metas e Objetivos',
-      icon: LineChart,
-      path: '/organization',
-      color: 'from-indigo-500 to-indigo-600',
-      gradient: 'from-indigo-400/20 via-indigo-300/10 to-transparent',
-      iconBg: 'bg-indigo-500'
-    },
-    {
       title: 'FINTECH',
       description: 'Gerencie suas contas e transações financeiras',
       icon: Wallet,
@@ -90,6 +81,15 @@ const Home: React.FC = () => {
       color: 'from-sky-500 to-sky-600',
       gradient: 'from-sky-400/20 via-sky-300/10 to-transparent',
       iconBg: 'bg-sky-500'
+    },
+    {
+      title: 'PLANNER PRO',
+      description: 'Organize sua vida financeira com os projetos e atinja suas Metas e Objetivos',
+      icon: LineChart,
+      path: '/organization',
+      color: 'from-indigo-500 to-indigo-600',
+      gradient: 'from-indigo-400/20 via-indigo-300/10 to-transparent',
+      iconBg: 'bg-indigo-500'
     },
   ];
 
