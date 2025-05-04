@@ -78,9 +78,9 @@ const Home: React.FC = () => {
       icon: MessageCircle,
       // Replace with your actual Telegram group URL
       externalLink: 'https://t.me/yourtelegramgroup',
-      color: 'from-pink-500 to-rose-600',
-      gradient: 'from-pink-400/30 via-rose-300/20 to-transparent',
-      iconBg: 'bg-rose-500',
+      color: 'from-sky-500 to-sky-600',
+      gradient: 'from-sky-400/20 via-sky-300/10 to-transparent',
+      iconBg: 'bg-sky-500',
       special: true
     },
     {
@@ -88,9 +88,9 @@ const Home: React.FC = () => {
       description: 'Organize sua vida financeira com os projetos e atinja suas Metas e Objetivos',
       icon: LineChart,
       path: '/organization',
-      color: 'from-violet-500 to-purple-600',
-      gradient: 'from-violet-400/30 via-purple-300/20 to-transparent',
-      iconBg: 'bg-purple-500',
+      color: 'from-indigo-500 to-indigo-600',
+      gradient: 'from-indigo-400/20 via-indigo-300/10 to-transparent',
+      iconBg: 'bg-indigo-500',
       special: true
     },
     {
@@ -98,9 +98,9 @@ const Home: React.FC = () => {
       description: 'Aumente os seus lucros com nossos outros projetos de renda sem risco',
       icon: LineChart,
       path: '/projects',
-      color: 'from-cyan-500 to-blue-600',
-      gradient: 'from-cyan-400/30 via-blue-300/20 to-transparent',
-      iconBg: 'bg-blue-500',
+      color: 'from-emerald-500 to-emerald-600',
+      gradient: 'from-emerald-400/20 via-emerald-300/10 to-transparent',
+      iconBg: 'bg-emerald-500',
       special: true
     },
   ];
@@ -183,10 +183,9 @@ const Home: React.FC = () => {
                 onClick={() => handleCardClick(product)}
                 className={`
                   relative overflow-hidden bg-white rounded-xl sm:rounded-2xl 
-                  ${product.special ? 'shadow-xl sm:shadow-2xl border-2 scale-[1.02]' : 'shadow-lg sm:shadow-xl border border-gray-100'}
+                  ${product.special ? 'shadow-xl sm:shadow-2xl border-2 animate-bounce-slow' : 'shadow-lg sm:shadow-xl border border-gray-100'}
                   cursor-pointer transform transition-all duration-300 
-                  ${product.special ? 'hover:scale-[1.04]' : 'hover:scale-[1.02]'}
-                  hover:shadow-2xl h-full
+                  hover:scale-[1.02] hover:shadow-2xl h-full
                 `}
               >
                 <div className={`absolute inset-0 bg-gradient-to-br ${product.gradient} opacity-100`} />
