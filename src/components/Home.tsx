@@ -16,8 +16,17 @@ const Home: React.FC = () => {
     console.log(container);
   }, []);
 
-  // Added Telegram community to the products array
+  // Adicionado comunidade do Telegram ao array de produtos
   const products = [
+    {
+      title: 'PLANNER PRO',
+      description: 'Organize sua vida financeira com os projetos e atinja suas Metas e Objetivos',
+      icon: LineChart,
+      path: '/organization',
+      color: 'from-indigo-500 to-indigo-600',
+      gradient: 'from-indigo-400/20 via-indigo-300/10 to-transparent',
+      iconBg: 'bg-indigo-500'
+    },
     {
       title: 'FINTECH',
       description: 'Gerencie suas contas e transações financeiras',
