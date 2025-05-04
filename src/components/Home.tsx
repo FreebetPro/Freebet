@@ -91,6 +91,15 @@ const Home: React.FC = () => {
       gradient: 'from-indigo-400/20 via-indigo-300/10 to-transparent',
       iconBg: 'bg-indigo-500'
     },
+    {
+      title: 'PROJETOS RENDA EXTRA',
+      description: 'Aumente os seus lucros com nossos outros projetos de renda sem risco',
+      icon: LineChart,
+      path: '/projects',
+      color: 'from-emerald-500 to-emerald-600',
+      gradient: 'from-emerald-400/20 via-emerald-300/10 to-transparent',
+      iconBg: 'bg-emerald-500'
+    },
   ];
 
   // Function to handle navigation or external links
