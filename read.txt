@@ -1,0 +1,78 @@
+# Documentação do Sistema de Gestão de Apostas
+
+## Visão Geral
+Este é um sistema completo de gestão de apostas que oferece várias funcionalidades para gerenciar contas em casas de apostas, realizar operações financeiras, e fornecer ferramentas de cálculo para apostadores.
+
+## Principais Funcionalidades
+
+### 1. Sistema de Autenticação
+- Login e Registro de usuários
+- Proteção de rotas para usuários autenticados
+- Gerenciamento de sessão com tokens JWT
+
+### 2. Gestão de Casas de Apostas (BettingHousesPage)
+- Visualização de todas as casas de apostas cadastradas
+- Gerenciamento de contas por casa de apostas
+- Monitoramento de saldos
+- Geração de códigos QR para depósitos
+- Sistema de depósito automático
+- Atualização automática de saldos
+- Filtros por status e busca por CPF/nome
+
+### 3. Calculadoras Especializadas
+- Calculadora de Aumento (AumentoCalculator)
+- Calculadora de Surebet (SurebetCalculator)
+- Calculadora de Dutching (DutchingCalculator)
+- Calculadora de Lay (LayCalculator)
+
+### 4. Sistema de Afiliados
+- Dashboard para afiliados
+- Gestão de assinaturas ativas
+- Monitoramento de assinaturas canceladas
+- Acompanhamento de pagamentos pendentes
+- Análise de checkouts abandonados
+
+### 5. Gestão de CPF
+- Estatísticas de CPF (CPFStatistics)
+- Gerenciamento de contas CPF
+- Controle de impostos
+
+### 6. Recursos Financeiros
+- Controle geral de finanças
+- Gestão de bancas
+- Integração com fintech
+- Controle de impostos
+
+### 7. Recursos Adicionais
+- Sistema de chat
+- Perfil de usuário
+- Organização de dados
+- Sistema de notificações
+- Páginas de upsell e downsell
+- Página de agradecimento
+
+## Tecnologias Utilizadas
+- React com TypeScript
+- Supabase para backend e banco de dados
+- Tailwind CSS para estilização
+- React Router para navegação
+- SweetAlert2 para notificações
+- Lucide React para ícones
+
+## Estrutura do Projeto
+- /src/components: Componentes reutilizáveis
+- /src/pages: Páginas principais da aplicação
+- /src/services: Serviços de API e autenticação
+- /src/utils: Funções utilitárias
+- /src/hooks: Custom hooks React
+- /src/types: Definições de tipos TypeScript
+- /src/lib: Configurações de bibliotecas
+
+## Segurança
+- Autenticação baseada em tokens
+- Proteção de rotas
+- Validação de dados
+- Armazenamento seguro de credenciais
+
+## Observações
+O sistema é projetado para ser uma solução completa de gestão de apostas, oferecendo ferramentas tanto para apostadores quanto para gestores de contas. A interface é intuitiva e responsiva, com foco na experiência do usuário e na segurança dos dados. 
